@@ -1,4 +1,5 @@
 # Types
+Place your answers in a '.md' file in your repository. 
 
 q1.
 
