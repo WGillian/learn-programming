@@ -15,7 +15,7 @@ Draw boxes around parts you think will be components.
 
 Share this with us.
 
-2. 
+2.
 
 Go build it. And submit PRs which are less than 6 screens of diff high so we can review your work / progress.
 
