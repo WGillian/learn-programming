@@ -28,3 +28,4 @@ Do it like throwing Spaghetti at wall. Feel free to jump backwards, re-read, re-
 * Read our homegrown React Primer.
 * Do the [tasks](https://docs.google.com/document/d/1GfyOXSaBuvjIsNMh31gKfED_q7H-_3muY9xuRgStjQY/edit?usp=sharing)
 * Build a [Static Site](../../tasks/reactStaticSite.md)
+* Build a [React Site With State](../../tasks/reactStateSite.md)
