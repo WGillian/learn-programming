@@ -2,7 +2,7 @@
 
 Redux is an alternative way to manage the state of a React App. Redux isn't directly related to React in any way, but was designed with React in mind.
 
-It helps keep your application simplier as it grows bigger.
+It helps keep your application simpler as it grows bigger.
 
 ## Resources
 
