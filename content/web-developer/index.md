@@ -30,7 +30,7 @@ Before you start please complete the [prerequisites](courses/core/prerequisites.
   * [Types](courses/core/types.md)
   * [Importing and Exporting](courses/core/importExport.md)
   * [React](courses/core/react.md)
-  * Routing (React router? pages.js)
+  * [Redux](courses/core/redux.md)
 
 * Nicely styling websites
   * [Bootstrap](courses/core/bootstrap.md)
