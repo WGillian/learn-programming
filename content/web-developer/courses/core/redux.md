@@ -19,3 +19,4 @@ It helps keep your application simpler as it grows bigger.
 * Look at [how we Redux](https://github.com/z-dev/react-seed/blob/master/src/containers/todoList/index.js) by loading up our example
 * Read Sync vs ASync section.
 * Read Redux Thunk documentation
+* Do the [Tasks](../..//tasks/redux.md)
