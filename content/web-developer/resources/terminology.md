@@ -169,6 +169,23 @@ const myObject = {hello: "world"}
 
 A reusable thing which is displayed on the screen. It can have parameters which change exactly how it renders.
 
+### Synchronous / A-Synchronous (Sync / Async)
+
+Synchronous calls to functions return immediately.
+
+e.g. `const adder = (x, y) => x + y`
+`adder(1, 2)` immediately returns `3`.
+
+We use Synchronous functions 95% of the time. 
+
+
+Asynchronouse calls are made and come back some time in the future. You're often not exactly sure when it will come back.
+
+e.g. `_.delay(() => console.log(adder(1,2)), 2000)`
+
+Usually async things come in the form a lambda which gets called later. Or a lambda in a promise (which we'll learn later).
+
+
 ###Library
 
 ###Framework
