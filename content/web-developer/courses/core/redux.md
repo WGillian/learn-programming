@@ -15,7 +15,7 @@ It helps keep your application simpler as it grows bigger.
 
 * Read the spreading primer
 * Skim through learn Redux
-* Watch the [EggHead.io Series](https://egghead.io/series/getting-started-with-redux) and use the [notes they've written](https://github.com/dwyl/learn-redux/blob/master/egghead.io_video_tutorial_notes.md) to help.
+* Watch the [EggHead.io Series](https://egghead.io/series/getting-started-with-redux) (STOP after 19) and use the [notes they've written](https://github.com/dwyl/learn-redux/blob/master/egghead.io_video_tutorial_notes.md) to help.
 * Look at [how we Redux](https://github.com/z-dev/react-seed/blob/master/src/containers/todoList/index.js) by loading up our example
 * Read Sync vs ASync section.
 * Read Redux Thunk documentation
