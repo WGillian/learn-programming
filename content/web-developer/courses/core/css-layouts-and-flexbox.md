@@ -29,7 +29,7 @@ Bare in mind [which browsers flexbox supports](http://caniuse.com/#feat=flexbox)
 
 ## Tasks
 
-Codeschool
-[Flexbox Froggy](http://flexboxfroggy.com/)
-https://docs.google.com/document/d/1XtgmPh_edSk_H-EUlhiyfurmlEkytNjZXdwBDgnNTIg/edit?usp=sharing
+* Codeschool
+* [Flexbox Froggy](http://flexboxfroggy.com/)
+* https://docs.google.com/document/d/1XtgmPh_edSk_H-EUlhiyfurmlEkytNjZXdwBDgnNTIg/edit?usp=sharing
 
