@@ -9,4 +9,4 @@ Take a look at [our example and how we do things](https://github.com/z-dev/react
   * Your answer should display when you visit http://localhost:3000/cats
   * Create a new `cats.js` reducer and `cats.js` action and container.
 * Convert the TodoList example in React Seed to use 100% redux-thunk. 
-* Convert a page site which uses the Spotify API to load the albums of your favourite music artist. [Loading Albums]()
+* Load the albums of Kate Bush into redux state and onto the screen [Spotify API to load the albums of Kate Bush](https://gist.github.com/richardgill/c452bea70840652110831fde95c695bd)
