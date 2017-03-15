@@ -52,3 +52,4 @@ Data goes across the network in serialized (string) form. So each time we get so
 
 * Skim through the Super Agent docs
 * Query the spotify api in code and log the results in the console: http://ws.spotify.com/search/1/artist.json?q=kate%20bush
+  * Start by cloning the [React-Seed repo](../../tasks/cloneReactSeedInstructions.md)
