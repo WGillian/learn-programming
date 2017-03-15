@@ -51,4 +51,4 @@ Data goes across the network in serialized (string) form. So each time we get so
 ## Tasks
 
 * Skim through the Super Agent docs
-* Query the spotify api in code and display the results on the page using jQuery: http://ws.spotify.com/search/1/artist.json?q=kate%20bush
+* Query the spotify api in code and log the results in the console: http://ws.spotify.com/search/1/artist.json?q=kate%20bush
