@@ -1,7 +1,0 @@
-machine:
-  node:
-    version: 5.2.0
-
-test:
-  override:
-    - npm run lint_js && npm run compile && ./bin/deployInCi.sh
