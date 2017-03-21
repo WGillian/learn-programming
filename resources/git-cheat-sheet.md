@@ -63,3 +63,10 @@ This tells git that we're actually moving a file. It shows up as 1 change in `gi
 ### The bail out
 
 git clone the whole thing again into a new folder :p (I do this sometimes :p) and start from there :smile:
+
+## Slightly more Advanced git foo
+
+### Force reset a branch to something
+
+`git reset --hard origin/master` <- Goes to github of origin remote, finds master. And completely replaces the current branch you are in with those commits.
+
