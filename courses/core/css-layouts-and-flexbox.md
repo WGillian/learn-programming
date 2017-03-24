@@ -1,4 +1,4 @@
-#CSS layouts and Flexbox
+# CSS layouts and Flexbox
 
 ## Outcome
 
@@ -12,7 +12,7 @@ The standard layout in HTML is weird. I still don't 100% understand it. I found 
 
 Flexbox is a newer way of laying things out that is far more sensible. I found after a couple of hours I could make any layout I wanted 99% of the time :smile:
 
-##Advice
+## Advice
 
 Couldn't find a perfect guide, these guides are pretty good but not perfect.
 
