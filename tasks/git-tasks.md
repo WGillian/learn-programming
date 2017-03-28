@@ -9,4 +9,4 @@ Do `git status` at each step to see what is going on.
 * Do a change to readme.md and commit it to the branch (command line)
 * Submit a pull request on that branch on github.com which we will approve
 
-Note take a look at the 'files changed' tab. This tab will show you the files which have changed with a nice diff.
+Note take a look at the 'files changed' tab inside your pull request. This tab will show you the files which have changed with a nice diff.
