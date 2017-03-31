@@ -43,6 +43,8 @@ John
 James
 ```
 
+Note: Your answer should work for a `var people` of any length. E.g. `var people = ['Jack']` or `var people = ['Jack', 'John']`
+
 ###6
 
 Write a function which takes a name and returns the name without the first character.
