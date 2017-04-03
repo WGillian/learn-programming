@@ -17,7 +17,7 @@ branch-1: A, B, C, D, E
 branch-2: A, B, C, D, E, F
 ```
 
-If you PR branch-2 -> branch-1, git will release that A, B, C, D, E are in common to both and just show the diff of F.
+If you PR `branch-2` -> `branch-1`, git will realise that A, B, C, D, E are in common to both and just show you F in the PR.
 
 The important thing is that the two branches share a common history. 
 
