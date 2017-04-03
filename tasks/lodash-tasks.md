@@ -47,6 +47,7 @@ e.g.
   <thead>
 ...
 ```
+** Note: You just need to produce a string and `console.log` it. You don't need to actually show the table in the browser.
 ### 10
 Some gill family members are sensitive about their age. If the family member is over 26. Drop their age.
 
