@@ -1,4 +1,4 @@
-#Redux
+# Redux
 
 Redux is an alternative way to manage the state of a React App. Redux isn't directly related to React in any way, but was designed with React in mind.
 

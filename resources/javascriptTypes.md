@@ -1,6 +1,6 @@
-#Types
+# Types
 
-There are different 'types' in Javascript you'll already be familar with a few. 
+There are different 'types' in Javascript you'll already be familar with a few.
 
 ## Strings
 
@@ -34,7 +34,7 @@ numbers with a point in.
 
 ## Arrays
 
-Arrays are a type of *collection*. They can be used to store other types inside them. 
+Arrays are a type of *collection*. They can be used to store other types inside them.
 
 ```
 []
@@ -59,7 +59,7 @@ Objects are also a type of collection. They have keys and values. Keys are usual
 ## Don't mix types inside collections
 It works. But it's confusing. Probably best not to.
 ```
-[1,"Oh no!", [1,2,3]] 
+[1,"Oh no!", [1,2,3]]
 {hello: "buddy", goodbye: 11}
 ```
 
@@ -73,7 +73,7 @@ Maths.abs(-7)
 
 Maths.abs(-7.7)
 // => 7.7
-``` 
+```
 
 `Maths.abs` expects an integer or a float. But if you pass something else that just doesn't make sense.
 

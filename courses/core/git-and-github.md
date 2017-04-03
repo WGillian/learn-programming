@@ -1,4 +1,4 @@
-#Git and Github
+# Git and Github
 
 ## Outcome
 
@@ -14,7 +14,7 @@ You'll:
 
 None
 
-##Advice
+## Advice
 
 95% of developers use git for version control. It has ALOT of features, you'll use <50% of them (We know because we use <50% of them!).
 

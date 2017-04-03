@@ -1,4 +1,4 @@
-#Exporting and Importing
+# Exporting and Importing
 
 You've learned to write Javascript. Congrats!
 
@@ -6,7 +6,7 @@ So far you put code into `.js` files then used `<script src="myfile.js" />` to l
 
 Webpack is a magical beast. It takes all your `.js` files and 'inlines' (merges) them into one big file (how clever).
 
-It then automatically adds one `<script src"oneMassiveJavascriptFile.js" />` to your HTML for you. 
+It then automatically adds one `<script src"oneMassiveJavascriptFile.js" />` to your HTML for you.
 
 ## Why export and import?
 
@@ -18,7 +18,7 @@ This is only to help human beings understand what the hell is going on. Javascri
 
 ### How it works
 
-* You can only `export default` once per file. 
+* You can only `export default` once per file.
 * It exports an expression not a declaration.
 
 You can do:
@@ -39,7 +39,7 @@ You can do:
 
 You can then import your `export default`'d expression in another file.
 
-e.g. 
+e.g.
 
 ```
 import hello from './hello'
@@ -207,7 +207,7 @@ console.log(banana()) // => prints "Banana!"
 
 Import and Exporting has an extra useful trick. If you name a file `index.js` you can import it by just mentioning the name of the folder.
 
-###Example
+### Example
 
 `banana/index.js`
 

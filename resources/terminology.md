@@ -7,23 +7,23 @@ Special built-in keywords you can use in the middle of an expression which do th
 Examples:
 
 ```
-#Add +
+# Add +
 1 + 1
 => 2
 
-#Subtract -
+# Subtract -
 1 - 1
 => 0
 
-#Divide /
-9 / 3 
+# Divide /
+9 / 3
 => 3
 
-#Multiply (times) *
-3 * 3 
+# Multiply (times) *
+3 * 3
 => 9
 
-#Mod (Modulus) %
+# Mod (Modulus) %
 Tells you the remainder of a division
 
 9 % 3
@@ -32,7 +32,7 @@ Tells you the remainder of a division
 9 % 2
 => 1 (because it goes in 4 times remainder 1)
 
-#And &&
+# And &&
 true && false
 => false
 false && true
@@ -42,7 +42,7 @@ false && false
 true && true
 => true
 
-#Or ||
+# Or ||
 true || false
 => true
 
@@ -57,10 +57,10 @@ Javascript calculating the value of something. You can practice this in the cons
 
 The simplest example is the mathematical operators.
 
-e.g. 
+e.g.
 
 ```
-1 + 1 
+1 + 1
 => 2
 ```
 Javascript has evaluated (or calculated) the result.
@@ -72,7 +72,7 @@ Something Javascript can evaluate.
 
 Expressions can contain sub expressions. There is an order Javascript will execute the expressions in.
 
-e.g. 
+e.g.
 `1` <- a very simple expression
 
 `1 + 1` <- an expression which contains other expressions within it.
@@ -83,7 +83,7 @@ e.g.
 ```
 # Inline
 
-Taking lots of small bits of javascript and putting them together. 
+Taking lots of small bits of javascript and putting them together.
 
 e.g.
 
@@ -91,7 +91,7 @@ e.g.
 const x = "hello"
 console.log(x)
 
-// Can be inlined to 
+// Can be inlined to
 
 console.log("hello")
 ```
@@ -103,7 +103,7 @@ const x = "hello"
           ^^^^^^^   <- Right hand Side
 console.log(x)
 
-// Can be inlined to 
+// Can be inlined to
 
 console.log("hello")
             ^^^^^^^
@@ -113,11 +113,11 @@ console.log("hello")
 # Statement
 
 Statements contain one or more expressions.
-Statements can be ended with either a semi colon or a new line. 
-A line of code. When you're using the debugger and use the jump to next line of button. 
+Statements can be ended with either a semi colon or a new line.
+A line of code. When you're using the debugger and use the jump to next line of button.
 
-e.g. 
-`console.log("Hello");` <- 1 Statement containing a few expressions 
+e.g.
+`console.log("Hello");` <- 1 Statement containing a few expressions
 
 e.g.
 
@@ -131,11 +131,11 @@ const x = 1 + 2 + 3 //<- Statement 1
   + 4 + 5  //<- Still statement 1
   + 6 + 7  //<- Still statement 1
 ```
-Is one statement even though it goes over a few lines. 
+Is one statement even though it goes over a few lines.
 
 If you use a semi colon or start a new statement the previous statement is finished.
 
-e.g. We can remove just one `+` from the previous example to create two statements. 
+e.g. We can remove just one `+` from the previous example to create two statements.
 ```
 const x = 1 + 2 + 3
   + 4 + 5  //<- Statement 1
@@ -150,7 +150,7 @@ _.map([1,2,3], (number) => {  //<- Statement 1
 })                            //<- Still statement 1
 
 ```
-The debugger will jump over these three lines in one go. 
+The debugger will jump over these three lines in one go.
 
 
 # Declaration (sometimes called: definition or defining)
@@ -176,7 +176,7 @@ Synchronous calls to functions return immediately.
 e.g. `const adder = (x, y) => x + y`
 `adder(1, 2)` immediately returns `3`.
 
-We use Synchronous functions 95% of the time. 
+We use Synchronous functions 95% of the time.
 
 
 Asynchronouse calls are made and come back some time in the future. You're often not exactly sure when it will come back.
@@ -186,22 +186,22 @@ e.g. `_.delay(() => console.log(adder(1,2)), 2000)`
 Usually async things come in the form a lambda which gets called later. Or a lambda in a promise (which we'll learn later).
 
 
-###Library
+### Library
 
-###Framework
+### Framework
 
-###API
+### API
 
-###Backend
+### Backend
 
-###Frontend
+### Frontend
 
-###Fullstack developer
+### Fullstack developer
 
-###IO
+### IO
 
-###Algorithm
+### Algorithm
 
-###Black Box
+### Black Box
 
 A box which is black.

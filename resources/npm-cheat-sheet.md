@@ -16,15 +16,15 @@ dependency only needed to build your project or 'dev' it locally. E.g. Webpack.
 
 Google "thing you want to do npm". It will tend to lead you to the [npm site which has a search function](https://www.npmjs.com/search?q=netlify) should you need it.
 
-###version
+### version
 
 [Semantic versions](http://semver.org/) go [major].[minor].[patch] e.g. version 3.1.2.
 
-###the package.json file
+### the package.json file
 
 `package.json` is the config file for npm for your project, it's in "json" format (same as javascript object format but left hand side has quotes too).
 
-###global installs.
+### global installs.
 
 If you install a dependency 'globally' you can access it from anywhere on your command line. e.g. `netlify`.
 
@@ -37,7 +37,7 @@ You can then do
 `netlify` (note: the command doesn't have to match the dependency name)
 
 
-###not installing things globally.
+### not installing things globally.
 
 It's generally a bad idea to install things globally. Instead do this:
 

@@ -41,7 +41,7 @@ var elementType = 'div'
 var someHtml = <elementType></elementType>
 ```
 
-##React
+## React
 
 React is a javascript library which helps build more complex interactive UIs. It helps you build 'views' (User Interfaces) which change as inputs come in (e.g. data from a http api, or a user clicking things).
 
@@ -49,7 +49,7 @@ It provides about 5 important APIs, that you need to understand well. And a bunc
 
 Important APIs:
 
-###React.render
+### React.render
 
 ```
 React.render(<p>Hello</p>, document.getElementById('content'));
@@ -61,7 +61,7 @@ In the order javascript evalulates it:
 * So this whole thing is pretty much like: `$('#content').replace(<p>Hello</p>)`
 
 
-###React.createClass (React Components)
+### React.createClass (React Components)
 
 `React.createClass` is how you define a 'component'. Components is the only idea in React. They can have [different functions defined inside them](https://facebook.github.io/react/docs/component-specs.html): e.g. `render`, `componentWillMount`.
 
@@ -69,7 +69,7 @@ Components are 'defined' (once), 'created' (0 or more times). Once a component i
 
 The functions inside the component definition are called at certain points in a components life.
 
-####Defining a component
+#### Defining a component
 ```
 var myComponent = React.createClass({
   render: function() {
@@ -80,28 +80,28 @@ var myComponent = React.createClass({
 })
 ```
 We will be putting each component in it's own file (and `module.export`ing it for use else where.)
-####Creating (instantiating) a component
+#### Creating (instantiating) a component
 You can then write: `<myComponent />`. So you can basically define your own html tags. E.g. `<hero />` which would render a dota hero. You can reuse it anywhere.
 
-###render
+### render
 
 `render` is a function which returns JSX. The component will call the render function whenever it wants to know: 'What does this component currently look like at this point in its life.'. It will take the output of the `render` function and put it into the browser (it updates the DOM automatically every time it calls the render function).
 
 Every component *Must* have a `render` function.
 
-###Props (properties -> could be called 'arguments' really)
+### Props (properties -> could be called 'arguments' really)
 
 Props are properties that get 'passed in' to the component when it's created.
 
 Props are *immutable* - they can never change.
 
-####Passing props in
+#### Passing props in
 
 `<hero name='Puck' />`
 
 Here we pass a prop called `name` into the hero with the value `'Puck'`.
 
-####Talking about props inside the component
+#### Talking about props inside the component
 
 Inside any of the functions we pass into `createClass` e.g. `render`.  We can access the prop using `this.props.name`.
 
@@ -117,16 +117,16 @@ var hero = React.createClass({
 ```
 I'm aware that `this` has just randomly just popped up on you :p . This is because components are conceptially a 'Class' and we're straying into Object Oriented Programming (OOP), which is quite famous / popular. This is a tricky concept which we will cover fully later, I think you can program React without really understanding it fully. (I know not understanding stuff fully kind of sucks though :( )
 
-###State
+### State
 
 State very similar to props, except for it's not immutable - so they can change over time.
 
 You should favour props where possible. Cos things not changing is easier to reason about in a programmers mind.
 
 
-####Setting state
+#### Setting state
 
-#####getInitialState function
+##### getInitialState function
 
 ```
 var hero = React.createClass({
@@ -141,26 +141,26 @@ var hero = React.createClass({
   }
 })
 ```
-#####setState function
+##### setState function
 In any of the functions inside the component. You can say `this.setState({name: 'Danger Mouse'})`.
 
 Any time you change the state of a component React will call the `render` function again and update the component automatically on the screen.
 
 Do not set state like this: `this.state = {name: 'Danger Mouse'}`. It won't call the `render` function, and might just completely break everything.
 
-####Talking about state inside the component
+#### Talking about state inside the component
 
 Inside any of the functions we pass into `createClass` e.g. `render`.  We can access the state (which is also an object like props) using `this.state`.
 
-###componentWillMount
+### componentWillMount
 
 `componentWillMount` is a function you define inside your component. It gets called when you create your component. Use it to do stuff before your component is shown on the screen.
 
-###componentDidMount
+### componentDidMount
 `componentDidMount` is a function you define inside your component. It gets called a little after `componentWillMount`. Use it to do stuff before your component is shown on the screen.
 
 
-###How to think about React
+### How to think about React
 
 * React is a library which lets you create new HTML tags (components) e.g: `<cat name='Pickles'/>`.
 * React components are essentially: `props` (immutable) + `state` (can change) and a `render` function which probably talks about `props` and `state`.

@@ -1,4 +1,4 @@
-##Example
+## Example
 
 Write the execution order of:
 
@@ -32,24 +32,24 @@ Math.sum([1, 2, 3, 3])
 
 If you get stuck. Use the chrome debugger to test things out.
 
-##1
+## 1
 ```
 [1, 2, 3, 4 + 5].length
 ```
 
-##2
+## 2
 ```
 "hello".subString(0, 3).length
 ```
 
 
-##3
+## 3
 
 ```
 "hello".subString(0, 3 - 1).length + "world"
 ```
 
-##4
+## 4
 
 ```
 { hello: "wor" + "ld" }

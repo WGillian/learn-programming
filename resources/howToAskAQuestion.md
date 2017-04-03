@@ -1,4 +1,4 @@
-#How to ask a question
+# How to ask a question
 
 Do you have **NO** idea what you're doing / what you're supposed to be doing. And you don't even know what your problem is?
 
@@ -8,7 +8,7 @@ If you have a problem you want help with please ask a question with:
 
 * What you think the problem is.
 * Give us as much code as possible (multiple files, or a link to a github repo where you've verified the problem exists)
-* What you've tried / different ideas you had 
+* What you've tried / different ideas you had
 * What you googled
 
 Basically make your question as easy to answer as possible.
@@ -17,7 +17,7 @@ You should be spending >= 5 mins putting a question together.
 
 It's ok to be wrong / look silly if you ask a good question.
 
-## Examples 
+## Examples
 
 ### Good question
 

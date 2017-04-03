@@ -1,4 +1,4 @@
-#Javascript execution order
+# Javascript execution order
 ## Outcome
 
 You'll:
@@ -16,12 +16,12 @@ e.g.
 ```
 console.log((3 * 2) + 4)
 ```
-will do: 
+will do:
 ```
-3 
-// => 3 
-2 
-// => 2 
+3
+// => 3
+2
+// => 2
 3 * 2
 // => 6
 (6) + 4

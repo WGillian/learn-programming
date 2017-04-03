@@ -9,20 +9,20 @@ You'll:
 
 React Native is like React for the web, but for iOS and Android.
 
-###Differences
+### Differences
 
 * HTML is replaced with an iOS / Android specific markup. It looks like HTML e.g `<div> -> <view>`, `<p> -> <text>`.
 * No CSS. CSS is replaced by very similar 'styles' (javascript hashes). They're a subset of CSS, and only support the flexbox layout.
 * The thing runs as an App on an iPhone (or the iPhone simulator) or an Android (or the simulator)
 * You can't escape the development environment for iPhone. You still need XCODE which is used write Apps.
 
-###Similarities
+### Similarities
 
 * React-Native is really similar to React. You write components with state + props and a render function (nothing changes there).
 * 99% of your code will be Javascript. You shouldn't have to write any Objective C (but you can if there's something which is impossible)
 * npm, requiring javascript files, any npm module (lodash, superagent etc. etc.), JSX
 
-###How it works
+### How it works
 
 React-Native comes with a command line cli (which is `npm install`ed). You can run `react-native init MyProjectName` and it generates all the files you need. A project which you can open and run in XCode. When you run the project xcode a couple of things happen:
 

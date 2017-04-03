@@ -1,4 +1,4 @@
-#Javascript Foundations
+# Javascript Foundations
 
 Warning: This course is long (and tough). It's 4 code school courses. But once you're done, you'll understand everything you need to know about Javascript :smile:.
 

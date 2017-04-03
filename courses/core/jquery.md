@@ -1,4 +1,4 @@
-#jQuery
+# jQuery
 
 ## Outcome
 
@@ -12,7 +12,7 @@ You'll:
 * Javascript Fundamentals
 * HTML and CSS Foundations
 
-##Advice
+## Advice
 
 jQuery was a revelation about 7-8 years ago, it's fallen out of favour by serious web devs more recently. But it's still super simple and it's by far the easiest to understand :simple:. You can build pretty much any kind of interactive website you can imagine using it.
 

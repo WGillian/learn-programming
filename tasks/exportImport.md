@@ -1,6 +1,6 @@
-#Exporting and Importing
+# Exporting and Importing
 
-##Setup
+## Setup
 
 Follow [these instructions](./cloneReactSeedInstructions.md)
 
@@ -8,9 +8,9 @@ Once it's up and running go to http://localhost:3000/importExportTasks.
 
 `import` and test your answers in `src/components/importExportTasks/index.js`
 
-All your answers should go in the `src/components/importExportTasks` 
+All your answers should go in the `src/components/importExportTasks`
 
-1. 
+1.
 
 `export default` a string: "Banana!" in a file `banana.js`
 

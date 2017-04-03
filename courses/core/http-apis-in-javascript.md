@@ -20,7 +20,7 @@ Instead we'll use a library. The nicest library for doing this IMO is [SuperAgen
 
 With any data format (json, xml, etc.) there are two common operations we can do them.
 
-####Serialize (marshal, stringify, to_string)
+#### Serialize (marshal, stringify, to_string)
 
 Converts an object into a string.
 
@@ -30,7 +30,7 @@ JSON.stringify({a: 1})
 => '{"a": 1}'
 ```
 
-####Parse (unmarshal, deserialize)
+#### Parse (unmarshal, deserialize)
 
 Converts a string into an object.
 

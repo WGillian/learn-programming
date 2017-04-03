@@ -1,4 +1,4 @@
-#Javascript Types
+# Javascript Types
 
 Types are important to understand to program Javascript
 

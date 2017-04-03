@@ -1,4 +1,4 @@
-#Node (Quickly)
+# Node (Quickly)
 
 ## Outcome
 
@@ -12,7 +12,7 @@ You'll:
 
 * Javascript Fundamentals
 
-##Advice
+## Advice
 
 Ignore what he says Node is for. It's for any 'backend' you like really. It's not very low level IMO, it's not just for performance or event driven / real time web (dunno what real time web is...) stuff.
 
