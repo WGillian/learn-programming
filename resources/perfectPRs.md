@@ -9,3 +9,4 @@
 * Are there any files > 3 screens high?
 * Do all of your names for `const`s and functions make sense for human beings! (Go with nouns a child could understand)
 * Do you have any functions > 7 lines in length (aim for 5 or less)?
+* Are the commits / file changes you see just the one's you were expecting (nobody else's work, no old work)?
