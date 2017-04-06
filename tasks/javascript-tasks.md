@@ -4,7 +4,7 @@ Do all of the below in Chrome debugging console. If you get stuck [learn to debu
 
 Create a github repo and commit your answers regularly inside the repo.
 
-Use [this repo](Use this repo as a template of how to structure your github: https://github.com/z-dev/simple-js-site/tree/master) as a template of how to structure your github. 
+Use [this repo]( https://github.com/z-dev/simple-js-site/tree/master) as a template of how to structure your github.
 
 ### 1
 
