@@ -38,3 +38,4 @@ Browsers don't support ES6 natively ([they do support some features](https://kan
   * Object rest properties (ES7) (For React mainly)
   * Object spread properties (ES7) (For React mainly)
 * For each feature, build an example of it working and look at the ES5 code that gets generated.
+  * Use [Webpack Sample](https://github.com/richardgill/webpack-seed) for solution
