@@ -32,6 +32,7 @@ What will webpack do for us:
 
 * Checkout the [sample webpack project](https://github.com/richardgill/webpack-seed).
   * Read the readme for the commands you can run
+  * Run a dev server and open it up and your browser
   * Modify some SCSS and check it compiles to CSS and you can see it in chrome
   * Modify some javascript and look at the output in chrome
   * Do some javascript `require`s and look at the output in chrome
