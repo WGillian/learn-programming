@@ -36,4 +36,3 @@ Now we can override some of those variables and control the exact theme of our s
   * In `_variable_overrides.scss` modify:
     * Default font
     * Primary brand color
-* Convert Bear Medic to be Sass + Bootstrap :smiley:
