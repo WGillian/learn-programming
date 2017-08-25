@@ -1,3 +1,7 @@
+Event propagation is how javascript handles events which apply to more than one element.
+
+e.g. If put a div inside a div, then click the inner div. You're click both divs with one click.
+
 ```
 <div id=1 onClick=(e) => {
   console.log(1)
