@@ -58,10 +58,7 @@ The videos talks alot about 'resetting' the css to override the browser defaults
 ## Tasks
 
 * Run through the core learning materials + tasks.
-* [Codecademy problems](https://www.codecademy.com/learn/web)
-  * Broadway
-  * Innovation Cloud
-  * Move
+* [Codecademy Make a Website](https://www.codecademy.com/learn/make-a-website) **Excluding Building with Bootstrap**
 * Get one of the above Codecademy courses to work on your laptop locally.
 
 ### Optional tasks
