@@ -42,7 +42,7 @@ The videos talks alot about 'resetting' the css to override the browser defaults
 
 ### Alternative
 
-* [Codeacademy](https://www.codecademy.com/courses/web-beginner-en-HZA3b/) No videos, learn by doing.
+* [Codeacademy](https://www.codecademy.com/learn/make-a-website) No videos, learn by doing.
 
 * [Shayhowe](http://learn.shayhowe.com/html-css/). All reading and visual.
 
@@ -58,9 +58,5 @@ The videos talks alot about 'resetting' the css to override the browser defaults
 ## Tasks
 
 * Run through the core learning materials + tasks.
-* [Codecademy Make a Website](https://www.codecademy.com/learn/make-a-website) **Excluding Building with Bootstrap**
+* Run through [Codecademy Make a Website](https://www.codecademy.com/learn/make-a-website) **Excluding Building with Bootstrap**
 * Get one of the above Codecademy courses to work on your laptop locally.
-
-### Optional tasks
-
-* [Make recent Airbnb site from scratch](https://www.codecademy.com/en/skills/make-a-website/)
