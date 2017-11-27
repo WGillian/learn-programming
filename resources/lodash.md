@@ -2,9 +2,9 @@
 
 `_.filter(array, function)` 
 
-`array` is an array
-`function` is a function which takes a parameter and returns a boolean
-it returns an array.
+* `array` is an array
+* `function` is a function which takes a parameter and returns a boolean
+* it returns an array.
 
 It calls the function once for each element in the array. Each call passes the current element in as a parameter to the function.
 
