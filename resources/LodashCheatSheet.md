@@ -4,9 +4,9 @@ Bear in mind that you may want to use one lodash function inside another - you m
 
 ## Filter
 
-`_.filter(array, function)` 
+`_.filter(collection, function)` 
 
-* `array` is an array
+* `collection` is a collection which could be an array, an object, or an array of objects.
 * `function` is a function which takes a parameter and returns a boolean
 * it returns an array.
 
@@ -43,13 +43,13 @@ _.filter(arrayOfObjects, function(object){ return object.a > 2 });
 
 ## Map
 
-`_.map(array, function);`
+`_.map(collection, function);`
 
-Like `_.filter`, `_.map` also takes in an array or object, and calls the function once for each element in the array. You can think of it as being like a shorthand for a `for()` loop.
+Like `_.filter`, `_.map` also takes in an array or object, and calls the function once for each element in the array. You can think of it as containing the mechanics of a `for()` loop, but that it calls the function for each element. 
 
-* `array` is an array
+* `collection` is a collection which could be an array, an object, or an array of objects.
 * `function` is a function which takes a parameter, and is applied to each element in the array.
-* it returns an array.
+* it returns an array, regardless of the type the collection began as.
 
 It calls the function once for each element in the array. Each call passes the current element in as a parameter to the function.
 
@@ -95,7 +95,7 @@ _.join(['a', 'b', 'c'], '~');
 `_.includes` checks whether a given value is included in a collection. The collection can be a string. You can dictate from which index position you would like to search from. If fromIndex is negative, it's used as the offset from the end of collection.
 
 * `collection` can be an array, an object or a string.
-* `value` can be an type of value: a string, an integer, a boolean.
+* `value` can be any type of value: a string, an integer, a boolean.
 * `fromIndex` the index to search from.
 * Returns a boolean: True if the value is included, False if else. 
 
@@ -114,6 +114,41 @@ _.includes({ 'a': 1, 'b': 2 }, 1);
 _.includes('abcd', 'bc');
 # returns true
 ```
+
+
+## Some
+
+`_.some(collection, predicate);`
+
+`_.some` checks the collection to see if *any* element of the collection returns truthy for the predicate and will stop the iteration. 
+
+* `collection` can be an array or an object.
+* `predicate` can be a function invoked per iteration. It can also be a type.
+* Returns a boolean: True if any element of the collection passes the predicate check, False if not. 
+
+**Note `_.includes` compares a _value_ with the collection, while `_.some` checks to see if an element in a collection returns true for a _function_.
+
+```
+_.some([null, 0, 'yes', false], Boolean);
+
+# returns true
+
+
+_.some([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], function(num) {
+  return num % 2 === 0; });
+
+# returns true
+
+var happinessIndex = [
+  { name: 'barney', happy: true, sad: false },
+  { name: 'fred',   happy: false, sad: true }
+];
+
+_.some(happinessIndex, ['sad', false]);
+
+#returns true
+```
+
 
 ## Size
 
@@ -164,7 +199,7 @@ _.capitalize('FRED');
 
 `_.omit` only accepts an object and a property to be omitted. Then returns a new object with the specified property omitted.
 
-* `object` is an object with properties of any type.
+* `object` accepts an object with properties of any type.
 * `property` is the property of the object you wish to omit. Should be given as a 'string', or a ['string'].
 * it returns a new object with the specified property omitted.
 
@@ -176,6 +211,42 @@ var object = {type: 'house', 'door #': 17, 'pets allowed': false, ratings: [4, 5
 _.omit(object, 'door #', 'type');
 
 # returns {'pets allowed': false, ratings: [4, 5, 3, 7, 6]}; 
+```
+
+
+## Reject
+
+`_.reject(collection, function);`
+
+The opposite of `_.filter`; this method returns the elements of collection that function does not return truthy for. `_.reject` accepts an array or an object and a function as parameters. It loops through each element appling the function and returning a boolean value. If this value is true it is rejected from the output. `_.reject` only allows elements for which the function returns false to be included in its returning output. This output does not change the type, it will return an array, an object, an array of objects etc.
+
+* `collection` is a collection which could be an array, an object, or an array of objects.
+* `function` is a function which takes a parameter and returns a boolean
+* it returns an array, an object, an array of objects.
+
+### Examples
+
+```
+_.reject([1,2,3], x => x < 2)
+
+# returns [2,3]
+
+```
+
+
+```
+_.reject([1,2,3], (x, i) => i < 2)
+
+# returns [3]
+
+# the second parameter is the current index of the element `x`
+```
+```
+var arrayOfObjects = [{a: 1, b: 'green'}, {a: 5, b: 'red'}, {a: 3, b: 'blue'}];
+
+_.reject(arrayOfObjects, function(object){ return object.a > 2 });
+
+# returns [{a: 1, b: 'green'}]
 ```
 
 
@@ -231,7 +302,7 @@ _.sortBy(people, 'age');
 ```
 
 
-##SumBy
+## SumBy
 
 `_.sumBy(array, function);`
 
@@ -278,8 +349,36 @@ _.sumBy(objects, 'age');
 # returns 5
 ```
 
+## IsEqual
 
- find, findindex, reject, flatten, every, some, compact, isequal, get, debounce, throttle
+`_.isEqual(value, otherValue);`
+
+`_.isEqual` takes two values and performs a deep comparison to determine whether they are equal.
+
+* `value` is the value to compare.
+* `otherValue` is the other value to compare.
+* it returns a boolean: True if the values are equal, False if not.
+
+### Examples
+
+```
+var object = { 'a': 1 };
+var otherObject = { 'a': 1 };
+ 
+_.isEqual(object, other);
+
+# returns true
+ 
+
+object === other;
+
+# returns false
+```
+
+## 
+
+
+ find, findindex, flatten, every, compact,  get, debounce, throttle
 
 
 
