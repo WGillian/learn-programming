@@ -255,7 +255,7 @@ _.sumBy(objects, 'age');
 ```
 
 
-##MeanBy
+## MeanBy
 
 `_.meanBy(array, function);`
 
