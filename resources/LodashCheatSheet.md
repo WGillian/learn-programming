@@ -1,4 +1,4 @@
-When deciding which lodash function to use you must first consider what _type_ of data you have - whether it is an array, an object, an integer, a string - then consider what it is you want to _do_ with that data (have a look at javascriptTypes.md if you're unsure)- do you want to loop through the data; join an array into a 'string'; remove certain values from a data list; work out the mean of a collection of integers; remove properties from an object, etc. - and then consider what you want the function to _return_: an array, an object, a boolean, an integer etc. Once you have figured these things out, it is much easier to choose the appropriate function from the lodash docs as many of them 'do what they say on the tin'. 
+When deciding which lodash function to use you must first consider what _type_ of data you have - whether it is an array, an object, an integer, a string (have a look at javascriptTypes.md if you're unsure) - then consider what it is you want to _do_ with that data - do you want to loop through the data; join an array into a 'string'; remove certain values from a data list; work out the mean of a collection of integers; remove properties from an object, etc. - and then consider what you want the function to _return_: an array, an object, a boolean, an integer etc. Once you have figured these things out, it is much easier to choose the appropriate function from the lodash docs as many of them 'do what they say on the tin'. 
 
 Bear in mind that you may want to use one lodash function inside another - you may need one function to loop through a collection (eg. `_.map`) and another to make the desired action (eg. `_.omit`).
 
@@ -183,7 +183,7 @@ _.omit(object, 'door #', 'type');
 
 `_.groupBy(collection, function)`
 
-'_.group' accepts a collection then iterates the function over the elements, then creates a new aggregate object with keys that fit the function and values.
+'_.groupBy' accepts a collection then iterates the function over the elements, then creates a new aggregate object with keys that fit the function and values.
 
 * `collection` is a collection - an array or object - to be inspected.
 * `function` is iterated over the keys.
@@ -211,7 +211,7 @@ _.groupBy(people, 'age');
 
 * `collection` is a collection - an array or object - to be inspected.
 * `function` is iterated over values.
-* it always returns a new ascending-order sorted array, or array of objects.
+* it always returns a new ascending-order sorted array, or an array of objects.
 
 ### Examples
 
@@ -231,12 +231,55 @@ _.sortBy(people, 'age');
 ```
 
 
-
 ##SumBy
+
+`_.sumBy(array, function);`
+
+`_.sumBy` takes an array and iterates the given function or identifier (eg. property) and gives the sum of the values indicated by the function/identifier.
+
+* `array` is the array to be iterated over.
+* `function` is iterated over the keys to check which values will be added together.
+* it returns a number: the sum of the values at the indicated keys.
+
+### Examples
+
+```
+var objects = [{ age: 4 }, { age: 2 }, { age: 8 }, { age: 6 }];
+ 
+_.sumBy(objects, function(o) { return o.age; });
+# returns 20
+ 
+
+_.sumBy(objects, 'age');
+# returns 20
+```
+
+
 ##MeanBy
 
+`_.meanBy(array, function);`
 
-sumby, meanby, sortby, find, findindex, reject, flatten, every, some, compact, isequal, get, debounce, throttle
+`_.meanBy` takes an array and iterates the given function or identifier (eg. property) and gives the sum of the values indicated by the function/identifier divided by the number of values, thereby producing the mean.
+
+* `array` is the array to be iterated over.
+* `function` is iterated over the keys to check which values will be used to calculate the mean.
+* it returns a number: the mean of the values at the indicated keys.
+
+### Examples
+
+```
+var objects = [{ age: 4 }, { age: 2 }, { age: 8 }, { age: 6 }];
+ 
+_.sumBy(objects, function(o) { return o.age; });
+# returns 5
+ 
+
+_.sumBy(objects, 'age');
+# returns 5
+```
+
+
+ find, findindex, reject, flatten, every, some, compact, isequal, get, debounce, throttle
 
 
 
