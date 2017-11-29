@@ -12,27 +12,12 @@ Underscore is particularly useful for it's operations on collections.
 
 Lodash and Underscore serve the same purpose and are 98% the same as far as I can tell. Lodash is the new hotness, so we'll use that :smile:
 
-Functions which I use often:
+Functions which I use often, and how to use them, can be found in this [cheat sheet](../../resources/lodash-cheat-sheet.md)
 
 Must know:
 * Map
 * Filter
 
-Quite often:
-* Find
-* Where
-* FindWhere
-* Reject
-* Every
-* Some
-* Contains
-* SortBy
-* GroupBy
-* Compact
-* Flatten
-* Debounce (useful for UI stuff sometimes)
-* Clone
-* IsEqual
 
 
 ## Learning materials
