@@ -70,23 +70,6 @@ _.map(arrayOfObjects, 'b');
 # returns ['green', 'red', 'blue']
 ```
 
-## Join
-
-`_.join(array, separator= ', ');`
-
-`_.join` takes in an array and returns the array joined together in a string with your separator between each value.
-
-* `array` is an array
-* `separator` must be a string and will form a concatenation between each value of the array.
-* it returns the joined string.
-
-### Examples
-
-```
-_.join(['a', 'b', 'c'], '~');
-
-# returns 'a~b~c'
-```
 
 ## Includes
 
@@ -128,6 +111,8 @@ _.includes('abcd', 'bc');
 
 **Note `_.includes` compares a _value_ with the collection, while `_.some` checks to see if an element in a collection returns true for a _function_.
 
+### Examples
+
 ```
 _.some([null, 0, 'yes', false], Boolean);
 
@@ -146,7 +131,141 @@ var happinessIndex = [
 
 _.some(happinessIndex, ['sad', false]);
 
-#returns true
+# returns true
+```
+
+## Every
+
+`_.every(collection, predicate);`
+
+Checks if predicate returns truthy for _all_ elements of collection. Iteration is stopped once predicate returns falsey. 
+**Note: This method returns true for empty collections because they are truthy, and have nothing in them to return falsy for the predicate.
+
+* `collection` can be an array or an object.
+* `predicate` can be a function invoked per iteration. It can also be a type, a property or a value.
+* Returns a boolean: True if _all_ elements of the collection passes the predicate check, False if not.
+
+### Examples
+
+```
+_.every([null, 0, 'yes', false], Boolean);
+
+# returns false
+
+
+_.every([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], function(num) {
+  return num % 2 === 0; });
+
+# returns false
+
+var happinessIndex = [
+  { name: 'barney', happy: true, sad: false },
+  { name: 'fred',   happy: true, sad: false }
+];
+
+_.every(happinessIndex, ['sad', false]);
+
+# returns true
+```
+
+## Find
+
+`_.find(collection, predicate, [fromIndex]);`
+
+`_.find` will iterate over a collection and return the first element the predicate returns as true. 
+
+* `collection` can be an array or an object.
+* `predicate` a way to identify the right element: can be a function invoked per iteration, or a property, or a value.
+* [fromIndex] is where `_.find` will search from.
+*it returns the matched element, without changing the type.
+
+### Examples
+
+```
+var happinessIndex = [
+  { name: 'barney', happy: true, sad: false },
+  { name: 'fred',   happy: false, sad: true },
+  { name: 'alice',  happy: true, sad: false }
+];
+
+_.find(happinessIndex, ['happy', true]);
+
+# returns { name: 'barney', happy: true, sad: false}
+
+
+_.find(happinessIndex, 'happy');
+
+# returns { name: 'barney', happy: true, sad: false}
+
+
+_.find(happinessIndex, 'happy', [1]);
+
+# returns { name: 'alice',  happy: true, sad: false }
+
+```
+
+## FindIndex
+
+`_.findIndex(array, perdicate, [fromIndex]);`
+
+This method is like _.find except that it returns the index of the first element predicate returns truthy for instead of the element itself.
+
+* `array` is an array to be inspected.
+* `predicate` a way to identify the right element: can be a function invoked per iteration, or a property, or a value.
+* [fromIndex] is where `_.findIndex` will search from.
+*it returns the index of the matched element.
+
+```
+var happinessIndex = [
+  { name: 'barney', happy: true, sad: false },
+  { name: 'fred',   happy: false, sad: true },
+  { name: 'alice',  happy: true, sad: false }
+];
+
+_.findIndex(happinessIndex, ['happy', true]);
+
+# returns 0
+
+
+_.findIndex(happinessIndex, 'happy');
+
+# returns 0
+
+
+_.findIndex(happinessIndex, 'happy', [1]);
+
+# returns 2
+
+```
+
+
+## Get
+
+`_.get(object, path, [defaultValue]);`
+
+`_.get` retrieves a value at the given path of an object. If the value in this location is undefined, the 'defaultValue' is returned in its place.
+
+* `object` is the object you are inspecting in which you expect to find the value.
+* `path` is the route you are dictating to find the value. eg. 'object.property' or object[property].
+* it returns the value found in the specified path location. Else:
+* `defaultValue` is returned if value at path location is undefined.
+
+### Examples
+
+```
+var dogKennel = {'# of dogs': 2, dogs: [{name: 'Peanut', breed: 'corgi'}, {name: 'Bruce', breed: 'Great Dane'}]};
+
+_.get(dogKennel, 'dogs[0]', 'default');
+
+# returns {name: 'Peanut', breed: 'corgi'}
+
+_.get(dogKennel, 'dogs.1.name', 'default');
+
+# returns 'Bruce'
+
+_.get(dogKennel, 'dogs.2', 'default');
+
+# returns 'default'
 ```
 
 
@@ -330,7 +449,7 @@ _.sumBy(objects, 'age');
 
 `_.meanBy(array, function);`
 
-`_.meanBy` takes an array and iterates the given function or identifier (eg. property) and gives the sum of the values indicated by the function/identifier divided by the number of values, thereby producing the mean.
+`_.meanBy` takes an array and iterates the given function or identifier (eg. property) and gives the sum of the values indicated by the function/identifier, divided by the number of values, thereby producing the mean.
 
 * `array` is the array to be iterated over.
 * `function` is iterated over the keys to check which values will be used to calculate the mean.
@@ -375,10 +494,46 @@ object === other;
 # returns false
 ```
 
-## 
+
+## Join
+
+`_.join(array, separator= ', ');`
+
+`_.join` takes in an array and returns the array joined together in a string with your separator between each value.
+
+* `array` is an array
+* `separator` must be a string and will form a concatenation between each value of the array.
+* it returns the joined string.
+
+### Examples
+
+```
+_.join(['a', 'b', 'c'], '~');
+
+# returns 'a~b~c'
+```
+
+## Flatten
+
+`_.flatten(array)`
+
+Flattens an array a single level deep.
+
+*`array` only accepts an array
+* it returns the flattened array
+
+### Examples
+
+```
+_.flatten([1, [2, [3, 4], 5], 6, {name: 'jess', age: 24}]);
+
+# returns [1, 2, [3, 4], 5, 6, {name: 'jess', age: 24}]
+```
 
 
- find, findindex, flatten, every, compact,  get, debounce, throttle
+
+
+compact, debounce, throttle
 
 
 
