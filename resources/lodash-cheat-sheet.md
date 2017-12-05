@@ -1,4 +1,4 @@
-When deciding which lodash function to use you must first consider what _type_ of data you have - whether it is an array, an object, an integer, a string (have a look at javascriptTypes.md if you're unsure) - then consider what it is you want to _do_ with that data - do you want to loop through the data; join an array into a 'string'; remove certain values from a data list; work out the mean of a collection of integers; remove properties from an object, etc. - and then consider what you want the function to _return_: an array, an object, a boolean, an integer etc. Once you have figured these things out, it is much easier to choose the appropriate function from the lodash docs as many of them 'do what they say on the tin'. 
+When deciding which lodash function to use you must first consider what _type_ of data you have - whether it is an array, an object, an integer, a string (have a look at [JavaScript types](javascriptTypes.md) if you're unsure) - then consider what it is you want to _do_ with that data - do you want to loop through the data; join an array into a 'string'; remove certain values from a data list; work out the mean of a collection of integers; remove properties from an object, etc. - and then consider what you want the function to _return_: an array, an object, a boolean, an integer etc. Once you have figured these things out, it is much easier to choose the appropriate function from the lodash docs as many of them 'do what they say on the tin'. 
 
 Bear in mind that you may want to use one lodash function inside another - you may need one function to loop through a collection (eg. `_.map`) and another to make the desired action (eg. `_.omit`).
 
@@ -519,8 +519,8 @@ _.join(['a', 'b', 'c'], '~');
 
 Flattens an array a single level deep.
 
-*`array` only accepts an array
-* it returns the flattened array
+* `array` only accepts an array.
+* it returns the flattened array.
 
 ### Examples
 
@@ -530,13 +530,19 @@ _.flatten([1, [2, [3, 4], 5], 6, {name: 'jess', age: 24}]);
 # returns [1, 2, [3, 4], 5, 6, {name: 'jess', age: 24}]
 ```
 
+## Compact
+`_.compact(array)`
 
+`_.compact` takes an array then creates a new array with all falsey values removed. The values `false`, `null`, `0`, `""`, `undefined`, and `NaN` are falsey.
 
+* `array` only accepts an array.
+* it returns an array with all the falsey values removed.
 
-compact, debounce, throttle
+### Example
 
+```
+_.compact([0, 1, false, 2, '', 3]);
 
-
-
-
+# returns [1, 2, 3]
+```
 

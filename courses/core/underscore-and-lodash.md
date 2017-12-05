@@ -12,28 +12,6 @@ Underscore is particularly useful for it's operations on collections.
 
 Lodash and Underscore serve the same purpose and are 98% the same as far as I can tell. Lodash is the new hotness, so we'll use that :smile:
 
-Functions which I use often:
-
-Must know:
-* Map
-* Filter
-
-Quite often:
-* Find
-* Where
-* FindWhere
-* Reject
-* Every
-* Some
-* Contains
-* SortBy
-* GroupBy
-* Compact
-* Flatten
-* Debounce (useful for UI stuff sometimes)
-* Clone
-* IsEqual
-
 
 ## Learning materials
 
@@ -41,6 +19,7 @@ Quite often:
 * http://underscorejs.org/
 * https://lodash.com/docs
 * https://leanpub.com/lodashcookbook/read#leanpub-auto-lodash-features <- Good examples
+* [Lodash cheatsheet](../../resources/lodash-cheat-sheet.md)
 
 ## Tasks
 

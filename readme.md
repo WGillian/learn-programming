@@ -20,6 +20,7 @@ Before you start please complete the [prerequisites](courses/core/prerequisites.
   * [Javascript Foundations](courses/core/javascript-foundations.md)
   * [Debugging](courses/core/debugging.md)
   * [Javascript Excecution Order](courses/core/javascript-execution-order.md)
+  * [Types](courses/core/types.md)
   * [Underscore / Lodash](courses/core/underscore-and-lodash.md)
   * [JQuery](courses/core/jquery.md)
 
@@ -27,7 +28,6 @@ Before you start please complete the [prerequisites](courses/core/prerequisites.
   * [Npm (and require)](courses/core/node-quickly.md)
   * [Webpack for 'building' a codebase](courses/core/webpack.md)
   * [ES6/7](courses/core/es6.md)
-  * [Types](courses/core/types.md)
   * [Importing and Exporting](courses/core/importExport.md)
   * [React](courses/core/react.md)
   * [Redux](courses/core/redux.md)
