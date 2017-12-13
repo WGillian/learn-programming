@@ -13,7 +13,7 @@ You will be building a static site using React.
 
 * Draw boxes around parts you think will be components.
 
-* **Share this with us.**
+* **Share your sketches with us.**
 
 2.
 
