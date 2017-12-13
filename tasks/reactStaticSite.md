@@ -9,11 +9,11 @@ You will be building a static site using React.
 
 1. 
 
-Draw, sketch, make in a word or screenshot a website you want to make.
+* Draw, sketch, make in a word or screenshot a website you want to make.
 
-Draw boxes around parts you think will be components.
+* Draw boxes around parts you think will be components.
 
-Share this with us.
+* **Share this with us.**
 
 2.
 
