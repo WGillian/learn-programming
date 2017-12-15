@@ -12,7 +12,7 @@ You'll understand:
 ## Prerequisites
 
 * Text editor ([Sublime Text 3](https://www.sublimetext.com/3))
-* [Bable extension](http://www.storybench.org/install-babel-packages-sublime-text-3/) for Sublime Text 3
+* [Babel extension](http://www.storybench.org/install-babel-packages-sublime-text-3/) for Sublime Text 3
 * Web browser ([Chrome](https://www.google.com/chrome/))
 * [Code School subscription](https://www.codeschool.com/pricing) ($21)
 * [Codecademy subscription](https://www.codecademy.com/)
