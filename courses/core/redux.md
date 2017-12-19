@@ -8,7 +8,7 @@ It helps keep your application simpler as it grows bigger.
 
 * Primer on [Spreading in ES6](../../resources/spreading.js)
 * [Learn Redux](https://github.com/dwyl/learn-redux)
-* [Sync vs Async](https://github.com/z-dev/hacker-how-content/blob/master/content/web-developer/resources/terminology.md#synchronous--a-synchronous-sync--async)
+* [Sync vs Async](../../resources/terminology.md#synchronous--a-synchronous-sync--async)
 * [Redux Thunk](https://github.com/gaearon/redux-thunk)
 * [Redux Videos by Richard](https://www.youtube.com/playlist?list=PL7ahsr4elhyCoQhDtBuumDmEkVQ_-0qlj)
 
