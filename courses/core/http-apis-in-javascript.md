@@ -51,5 +51,5 @@ Data goes across the network in serialized (string) form. So each time we get so
 ## Tasks
 
 * Skim through the Super Agent docs
-* Query the spotify api in code and log the results in the console: https://api.spotify.com/v1/artists/1aSxMhuvixZ8h9dK9jIDwL
+* Query the spotify api in code and log the results in the console: https://pokeapi.co/api/v2/pokemon/25/
   * Start by cloning the [React-Seed repo](../../tasks/cloneReactSeedInstructions.md)

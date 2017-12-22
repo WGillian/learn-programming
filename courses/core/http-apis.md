@@ -18,7 +18,7 @@ I found it really hard to define properly, so here are some examples.
 * jQuery has an api. It's the desciption of all the functions jQuery has.
   * One part of that api would be: `$('my-class') #Will select all elements in the DOM which have .my-class and return all the HTML elements that match.`
 * javascript doesn't have an api because it's not a library / framework, it's a programming language. I don't know why, but you wouldn't say 'javascript's api' to refer to the `+` operator. It's just part of the language. It's only things built on top of programming languages which have APIS. (1)
-* https://api.spotify.com/v1/artists/1aSxMhuvixZ8h9dK9jIDwL is an api. Because it takes parameters and returns structured data.
+* https://pokeapi.co/api/v2/pokemon/25/ is an api. Because it takes parameters and returns structured data.
 * http://google.com is not an api, because it doesn't return computer readable structured data. (It does take parameters though! e.g. https://google.com/?q=hello+john)
 
 So having thought about it more maybe: An API is a way of describing something which is conceptually like a 'function'. It takes parameters or data in and returns data out in a format a computer can easily understand.
@@ -91,7 +91,7 @@ But to use these, you need a library with can 'parse' and 'serialize' these form
 
 * Read the primer
 * Read the advice.
-* Download [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) and use it to call this api: https://api.spotify.com/v1/search?q=kate%20bush&type=artist
+* Download [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) and use it to call this api: https://pokeapi.co/api/v2/pokemon/25/
 
 ## Footnotes
 
